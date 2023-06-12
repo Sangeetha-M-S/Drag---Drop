@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag & Drop</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container-wrapper">
+    <div class="container" id="container1">
+      <div class="item" draggable="true">
+        <div class="image-container">
+          <img src="assets/cet.jpg" alt="Image">
+        </div>
+        
+      </div>
+      <div class="item" draggable="true">
+        <i class="fas fa-star"></i> <!-- Replace with your desired icon -->
+      </div>
+      <div class="item" draggable="true">Item 3</div>
+    </div>
+    
+    <div class="container" id="container2"></div>
+  </div>
+  
+  <div class="success-message" id="successMessage"></div>
+  
+  <button onclick="reset()">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
